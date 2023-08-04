@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaggy Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=PT+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS reset */
+    body {
+        font-family: 'Baloo 2', cursive;
+        font-family: 'PT Serif', serif;
+        margin: 0;
+        padding: 0;
+        background: url(img/Gym1.jpg);
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        left: 34px;
+    }
+
+    .left img {
+        width: 114px;
+        filter: grayscale(1);
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 17px;
+        color: grey;
+    }
+
+    .left div:hover {
+        color: darkolivegreen;
+        cursor: pointer;
+    }
+
+    .mid {
+        display: block;
+        width: 35%;
+        margin: 2px auto;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        right: 34px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 140%;
+    }
+
+    .navbar li a {
+        padding: 30px 20px;
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        font-size: 99%;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        color: darkolivegreen;
+
+
+    }
+
+    .btn {
+        font-family: 'Baloo 2', cursive;
+        background-color: transparent;
+        color: black;
+        border-radius: 8px;
+        border: 2px solid gray;
+        margin: 20px 23px;
+        padding: 8px 35px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: white;
+
+    }
+
+    .container {
+        border: 2px solid gray;
+        border-radius: 8px;
+        color: white;
+        margin: 75px 92px;
+        padding: 25px;
+        width: 30%;
+    }
+    .form-group input{
+        font-family: 'Baloo 2', cursive;
+        text-align: center;
+        display: block;
+        width: 350px;
+        padding: 9px;
+        border: 2px solid gray;
+        border-radius: 8px;
+        margin: 3px auto;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        background-color: transparent;
+        color: gray;
+        width: 69%;
+        margin: 8px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/logo1.jpg" alt="logo">
+            <div>Spaggy Fitness</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Accessories</a></li>
+                <li><a href="#">Nutrition</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Our Best Fitness Club</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Height">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Weight">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
